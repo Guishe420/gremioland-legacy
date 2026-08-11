@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gremioland-legacy.elguishe1990.workers.dev/sitemap.xml
