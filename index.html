@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="GremioLand Legacy — una nueva era comienza.">
+<title>GremioLand Legacy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#c7a45a;--gold2:#e7ce91;--bg:#050505}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:#eee;font-family:Cinzel,serif;overflow-x:hidden}a{color:inherit;text-decoration:none}
+#particles{position:fixed;inset:0;z-index:-3;background:radial-gradient(circle at 50% 45%,rgba(199,164,90,.1),transparent 28%),#050505}
+#particles:before,#particles:after{content:"";position:absolute;inset:-30%;background-image:radial-gradient(circle,rgba(255,255,255,.16) 0 1px,transparent 1.5px),radial-gradient(circle,rgba(199,164,90,.13) 0 1px,transparent 1.5px);background-size:95px 95px,155px 155px;animation:float 24s linear infinite}
+#particles:after{background-size:180px 180px,120px 120px;animation-duration:38s;animation-direction:reverse;opacity:.45}
+@keyframes float{to{transform:translate3d(80px,-180px,0)}}
+.nav{position:fixed;top:0;left:0;right:0;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 6%;z-index:20;background:linear-gradient(to bottom,rgba(0,0,0,.9),transparent);backdrop-filter:blur(5px)}
+.brand{font-family:UnifrakturCook,serif;font-size:28px}.nav-links{display:flex;gap:28px;font-size:12px;letter-spacing:1.5px}.nav-links a{color:#aaa;transition:.25s}.nav-links a:hover{color:var(--gold2)}
+.menu{display:none;background:none;border:0;color:#fff;font-size:26px}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:100px 22px 70px;position:relative}
+.hero-inner{max-width:900px}.kicker{color:var(--gold);font-size:11px;letter-spacing:6px;text-transform:uppercase;margin-bottom:25px}
+h1{font-family:UnifrakturCook,serif;font-size:clamp(60px,15vw,125px);line-height:.9;text-shadow:0 0 35px rgba(199,164,90,.13)}
+.hero p{max-width:620px;margin:30px auto 0;color:#aaa;font-family:Georgia,serif;font-size:16px;line-height:1.8}
+.actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:35px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-width:170px;padding:14px 22px;border:1px solid #4b4b4b;transition:.25s;letter-spacing:1px;font-size:12px}
+.btn.primary{background:var(--gold);border-color:var(--gold);color:#090909}.btn:hover{transform:translateY(-2px);border-color:var(--gold2)}
+.scroll{position:absolute;bottom:28px;color:#555;font-size:9px;letter-spacing:4px;animation:pulse 2.5s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35}}
+section{min-height:70vh;padding:110px 7%;display:flex;flex-direction:column;justify-content:center;border-top:1px solid rgba(255,255,255,.06)}
+.section-head{text-align:center;margin-bottom:50px}.section-head span{font-size:10px;letter-spacing:5px;color:var(--gold)}.section-head h2{font-family:UnifrakturCook,serif;font-size:52px;margin-top:10px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1100px;width:100%;margin:auto}
+.card{background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.08);padding:35px 28px;min-height:190px;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:rgba(199,164,90,.4)}.card .icon{font-size:25px;margin-bottom:18px}.card h3{font-size:17px;margin-bottom:12px}.card p{font-family:Georgia,serif;color:#888;line-height:1.7;font-size:14px}
+.discord{text-align:center;min-height:55vh}.discord p{max-width:650px;margin:0 auto 30px;color:#999;font-family:Georgia,serif;line-height:1.8}
+footer{padding:35px 7%;text-align:center;border-top:1px solid rgba(255,255,255,.06);color:#555;font-size:10px;letter-spacing:2px}
+@media(max-width:700px){.nav{height:62px;padding:0 5%}.brand{font-size:23px}.nav-links{display:none}.menu{display:block}.hero{padding-top:90px}.hero p{font-size:14px}.cards{grid-template-columns:1fr}section{padding:90px 6%}.section-head h2{font-size:43px}}
+</style>
+</head>
+<body>
+<div id="particles"></div>
+<header class="nav">
+<a class="brand" href="#inicio">GremioLand</a>
+<nav class="nav-links"><a href="#inicio">INICIO</a><a href="#proyecto">PROYECTO</a><a href="#comunidad">COMUNIDAD</a><a href="#discord">DISCORD</a></nav>
+<button class="menu" aria-label="Menú" onclick="toggleMenu()">☰</button>
+</header>
+<main>
+<section class="hero" id="inicio">
+<div class="hero-inner">
+<div class="kicker">Una nueva era comienza</div>
+<h1>GremioLand<br>Legacy</h1>
+<p>El legado de años de aventuras, historias y experiencias está a punto de renacer.</p>
+<div class="actions"><a class="btn primary" href="#proyecto">DESCUBRIR EL PROYECTO</a><a class="btn" href="https://discord.gg/aKemzmKh22" target="_blank" rel="noopener">UNIRSE AL DISCORD</a></div>
+</div><div class="scroll">DESLIZA PARA DESCUBRIR</div>
+</section>
+<section id="proyecto"><div class="section-head"><span>EL COMIENZO</span><h2>El Proyecto</h2></div>
+<div class="cards">
+<article class="card"><div class="icon">🏰</div><h3>GremioLand Legacy</h3><p>Una nueva etapa construida sobre años de experiencias y aventuras compartidas.</p></article>
+<article class="card"><div class="icon">📜</div><h3>Historia &amp; Lore</h3><p>Un mundo con identidad propia, personajes, misterios y una historia que descubrir.</p></article>
+<article class="card"><div class="icon">⚔️</div><h3>Experiencia</h3><p>Progresión, contenido personalizado y sistemas diseñados para crear una experiencia diferente.</p></article>
+</div></section>
+<section id="comunidad"><div class="section-head"><span>EL LEGADO LO CONSTRUIMOS JUNTOS</span><h2>Comunidad</h2></div>
+<div class="cards">
+<article class="card"><div class="icon">🗺️</div><h3>Un mundo por descubrir</h3><p>Próximamente encontrarás aquí información sobre mapas, servidores y novedades.</p></article>
+<article class="card"><div class="icon">🛠️</div><h3>Contenido personalizado</h3><p>Mods, sistemas y mecánicas propias serán parte fundamental de Legacy.</p></article>
+<article class="card"><div class="icon">👥</div><h3>La comunidad</h3><p>Únete al Discord para seguir el desarrollo y enterarte de las próximas novedades.</p></article>
+</div></section>
+<section class="discord" id="discord"><div class="section-head"><span>ÚNETE A LA AVENTURA</span><h2>Discord</h2></div>
+<p>Este será el principal punto de encuentro de GremioLand. Noticias, desarrollo, eventos y todo lo relacionado con el regreso del proyecto.</p>
+<div class="actions"><a class="btn primary" href="https://discord.gg/aKemzmKh22" target="_blank" rel="noopener">ENTRAR AL DISCORD</a></div></section>
+</main>
+<footer>GREMIOLAND LEGACY · EL LEGADO CONTINÚA</footer>
+<script>
+function toggleMenu(){const n=document.querySelector('.nav-links');n.style.display=n.style.display==='flex'?'none':'flex';if(n.style.display==='flex'){n.style.position='absolute';n.style.top='62px';n.style.right='5%';n.style.flexDirection='column';n.style.background='rgba(5,5,5,.96)';n.style.padding='20px';n.style.border='1px solid rgba(255,255,255,.1)'}}
+</script>
+</body>
+</html>
